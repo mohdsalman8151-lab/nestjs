@@ -28,10 +28,10 @@ export class ProductController {
 
           return this.productService.createProduct(product);
      }
-     @Patch()
-     updateProduct(@Body(new ValidationPipe({ whitelist: true, forbidNonWhitelisted: true })) updateProduct: UpdateProductDto) {
-          console.log(updateProduct);
-          return updateProduct;
-     }
+     // @Patch()
+     // updateProduct(@Body(new ValidationPipe({ whitelist: true, forbidNonWhitelisted: true })) updateProduct: UpdateProductDto) {
+     //      console.log(updateProduct);
+     //      return updateProduct;
+     // }
 
 }

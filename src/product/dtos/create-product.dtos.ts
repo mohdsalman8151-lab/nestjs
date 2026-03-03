@@ -19,4 +19,7 @@ export class CreateProductDto {
     @IsOptional()
     @Type(() => Boolean)
     isPublish: boolean;
+    @IsNumber()
+    @IsNotEmpty({ message: "userId is required" })
+    userId: number;
 }
